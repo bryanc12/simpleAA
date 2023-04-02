@@ -1,0 +1,22 @@
+{
+  "name": "simpleaa",
+  "version": "1.0.0",
+  "description": "A simple authentication and authorization package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanc12/simpleAA.git"
+  },
+  "author": "Bryan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryanc12/simpleAA/issues"
+  },
+  "homepage": "https://github.com/bryanc12/simpleAA#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
