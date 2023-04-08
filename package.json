@@ -2,9 +2,9 @@
   "name": "simpleaa",
   "version": "1.0.0",
   "description": "A simple authentication and authorization package.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "devStart": "nodemon index.js"
+    "devStart": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
