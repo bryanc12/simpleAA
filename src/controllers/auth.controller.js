@@ -97,7 +97,7 @@ function refresh(req, res) {
 
 function test(req, res) {
     res.status(httpStatus.OK);
-    res.send({ message: 'Private route' });
+    res.send({ message: 'Hi ' + req.username + ', this\'s a preivate route.' });
     res.end()
 }
 

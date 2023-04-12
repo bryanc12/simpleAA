@@ -20,7 +20,7 @@ function authorize(req, res, next) {
       // Generate a new access token and add it to the request object
       // And also add the new access token cookie to the response object
       // Then call the authorize function again
-      const newAccessToken = accessTokenUtil.generateAccessToken(refreshTokenExist.username);
+      const newAccessToken = accessTokenUtil.generateAccessToken(refreshTokenExist);
       req.cookies[cookieName.accessToken] = newAccessToken;
       responseUtil.addCookie(res, cookieName.accessToken, newAccessToken, (1000 * 60 * 60));
       authorize(req, res, next);
@@ -29,6 +29,7 @@ function authorize(req, res, next) {
 
     // If the refresh token is not present
     // Then return an unauthorized response
+    responseUtil.removeCookie(res, cookieName.refreshToken);
     res.status(httpStatus.UNAUTHORIZED);
     res.send({ message: 'Not logged in' });
     res.end();
