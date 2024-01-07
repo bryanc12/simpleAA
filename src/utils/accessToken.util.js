@@ -3,7 +3,7 @@ const jwtConfig = require('../configs/jwt.config.js');
 
 function generateAccessToken(username, lifetime) {
     if (lifetime === undefined) {
-        lifetime = (1000 * 60 * 60);
+        lifetime = "1h";
     };
 
     const payload = {
