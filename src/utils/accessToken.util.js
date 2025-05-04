@@ -3,13 +3,8 @@ const jwtConfig = require("../configs/jwt.config.js");
 
 function generateAccessToken(username, lifetime) {
     if (lifetime === undefined) {
-<<<<<<< HEAD
-        lifetime = "1h";
-    };
-=======
-        lifetime = 1000 * 60 * 60;
+        lifetime = 1000 * 60 * 60; // 1 hour
     }
->>>>>>> 7fbbd34 (csrf verification fix)
 
     const payload = {
         username: username,
