@@ -1,5 +1,5 @@
 const jwtConfig = {
-    jwtSecret : 'secret123',
+    jwtSecret: "secret123456789123456789123456789",
 };
 
 module.exports = jwtConfig;

@@ -1,10 +1,15 @@
-const jwt = require('jsonwebtoken');
-const jwtConfig = require('../configs/jwt.config.js');
+const jwt = require("jsonwebtoken");
+const jwtConfig = require("../configs/jwt.config.js");
 
 function generateAccessToken(username, lifetime) {
     if (lifetime === undefined) {
+<<<<<<< HEAD
         lifetime = "1h";
     };
+=======
+        lifetime = 1000 * 60 * 60;
+    }
+>>>>>>> 7fbbd34 (csrf verification fix)
 
     const payload = {
         username: username,
