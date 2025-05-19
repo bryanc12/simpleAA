@@ -1,3 +1,4 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/bryanc12/simpleAA)
 # simpleAA (Under Development)
 A simple authentication and authorization module build with Express.js
 
